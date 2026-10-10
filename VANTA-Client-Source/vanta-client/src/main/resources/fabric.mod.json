@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "vanta",
+	"version": "${version}",
+	"name": "VANTA Client",
+	"description": "A customizable client experience inside one Fabric mod: launcher-style home screen, RIGHT SHIFT client menu, HUD editor, themes and live performance stats.",
+	"authors": [
+		"VANTA"
+	],
+	"license": "All-Rights-Reserved",
+	"icon": "assets/vanta/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"vanta.client.VantaClient"
+		]
+	},
+	"mixins": [
+		"vanta.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
